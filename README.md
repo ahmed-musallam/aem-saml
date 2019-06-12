@@ -35,7 +35,7 @@ With the IdP docker container running, navigate to the IDP metadata page: [http:
 
 #### Add the idp.crt to the trust store
 
-> AEM 6.3, follow: https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/saml-2-0-authenticationhandler.html#AddtheIdPCertificatetotheAEMTrustStore
+> AEM 6.3 (and below), follow: https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/saml-2-0-authenticationhandler.html#AddtheIdPCertificatetotheAEMTrustStore
 In AEM, you need to configure SAML
 
 for AEM 6.4+
