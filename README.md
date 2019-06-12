@@ -24,9 +24,9 @@ You can add/edit users, kill the container and run commands above.
 
 ### Configuring AEM
 
-#### Ge the Certificate File from the IdP
+#### Get the Certificate File from the IdP
 
-With the IdP docker container running, navigate to the IDP metadata page: (http://localhost:8080/simplesaml/saml2/idp/metadata.php?output=xhtml)[http://localhost:8080/simplesaml/saml2/idp/metadata.php?output=xhtml] and download the `idp.crt` file.
+With the IdP docker container running, navigate to the IDP metadata page: [http://localhost:8080/simplesaml/saml2/idp/metadata.php?output=xhtml](http://localhost:8080/simplesaml/saml2/idp/metadata.php?output=xhtml) and download the `idp.crt` file.
 
 > This cert file is typically provided by the IdP managers for you to add to AEM's trust store.
 
