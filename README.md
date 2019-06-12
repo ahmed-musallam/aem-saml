@@ -59,9 +59,9 @@ You have two options to do the OSGI config
 ![trust store](doc/saml-osgi-config.png)
 - make sure that you use the Trust Store Alias you copied from above step
 
-##### Option 1 - CURL
+##### Option 2 - CURL
 
-You could, instead, post the configuration using this CURL command. be sure to change the `idpCertAlias` to the Trust Store Alias you copied from above step
+I've made a convenient CURL command to do the manual step above, automatically. Be sure to change the `idpCertAlias` to the Trust Store Alias you copied from above step.
 
 
 ```sh
@@ -107,6 +107,8 @@ http://localhost:4502/system/console/configMgr/com.adobe.granite.auth.saml.SamlA
 ![trust store](doc/referrer-filter.png)
 
 This will ensure that SAML post requests from `localhost` will make it through to AEM.
+
+> in a production setup, you'll need to add the host of your IdP. for example, if your IdP is at the host `idp.mycompany.com` that is the host you need to add to the allow field. In our case, the IdP is at localhost.
 
 
 #### Testing
