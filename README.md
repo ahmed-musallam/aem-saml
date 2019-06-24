@@ -71,7 +71,8 @@ You have two options to do the OSGI config
 
 ##### Option 2 - CURL
 
-I've made a convenient CURL command to do the manual step above, automatically. Be sure to change the `idpCertAlias` to the Trust Store Alias you copied from above step.
+I've made a convenient CURL command to do the manual step above, automatically. 
+**Be sure to change the `idpCertAlias` to the Trust Store Alias you copied from above step.**
 
 
 ```sh
@@ -91,7 +92,7 @@ curl -u admin:admin -X POST \
 -d "userIDAttribute=uid" \
 -d "useEncryption=false" \
 -d "createUser=true" \
--d "userIntermediatePath=acg" \
+-d "userIntermediatePath=saml-users" \
 -d "addGroupMemberships=true" \
 -d "groupMembershipAttribute=groups"  \
 -d "defaultGroups=content-authors" \
