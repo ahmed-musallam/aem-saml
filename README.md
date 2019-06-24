@@ -2,6 +2,8 @@
 
 > HEAVILY based on [https://github.com/kristophjunge/docker-test-saml-idp](https://github.com/kristophjunge/docker-test-saml-idp)
 
+This is the fastest working SAML setup! It will help you setup SAML locally with AEM and start playing with it right away. Should take about 5 minutes to complete!
+
 ## Usage
 
 ### Install Docker
