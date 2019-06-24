@@ -4,23 +4,32 @@
 
 ## Usage
 
+### Install Docker
+- [Mac](https://docs.docker.com/docker-for-mac/)
+- [Windows](https://docs.docker.com/docker-for-windows/).
+
+Test the installation by running `docker version`, you should get something like:
+```
+Docker version 18.09.2, build 6247962
+```
+
 ### Running the IDP container:
+
+Clone this repo, then `cd` into the repo directory and run:
+
+*on Mac* 
 ```sh
 ./build-and-run.sh
 ```
 
-or
-
+or *on Windows*
 ```sh
 docker build -t "saml-aem" -f "Dockerfile" .
 docker run -p 8080:8080 saml-aem
 ```
 
+Wait for the docker image to build and the container to start.
 You should now be able to navigate to [`http://localhost:8080/simplesaml`](http://localhost:8080/simplesaml)
-
-### Default IDP Users
-There are three static users configured in the IdP, see them in this file: [`config/simplesamlphp/authsources.php`](config/simplesamlphp/authsources.php).
-You can add/edit users, kill the container and run commands above.
 
 ### Configuring AEM
 
@@ -110,6 +119,9 @@ This will ensure that SAML post requests from `localhost` will make it through t
 
 > in a production setup, you'll need to add the host of your IdP. for example, if your IdP is at the host `idp.mycompany.com` that is the host you need to add to the allow field. In our case, the IdP is at localhost.
 
+### Default IDP Users
+There are three static users configured in the IdP, see them in this file: [`config/simplesamlphp/authsources.php`](config/simplesamlphp/authsources.php).
+You can add/edit users, kill the container and run commands above.
 
 #### Testing
 
