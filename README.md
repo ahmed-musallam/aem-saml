@@ -49,11 +49,12 @@ In AEM, you need to configure SAML
 
 for AEM 6.4+
 
-- Navigate to `Tools > Security > Trust Store`
+1. Navigate to `Tools > Security > Trust Store`
 ![trust store](doc/trust-store.png)
-- upload the `idp.crt` file, lookup "Administrator" and click submit
+2. Click `Create TrustStore` and set a password (I set it to `password` for this demo)
+3. upload the `idp.crt` file, lookup "Administrator" and click submit
 ![trust store](doc/trust-store-1.png)
-- Copy the trust store alias
+4. Copy the trust store alias
 ![trust store](doc/trust-store-2.png)
 
 #### SAML OSGI Config
